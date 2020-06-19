@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html{
+  height: auto;
+  width: auto;
+}
+body{
+  height: auto;
+  width: auto;
+}
+#all{
+  min-height: 750px;
+}
+header {
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+  top: 0px;
+  width: 100%;
+  background: linear-gradient(to right,#c2f6ef,#71c3f7);
+}
+
+nav {
+  justify-content: space-between;
+  width: 80%;
+  min-height: 12;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+nav h1 {
+  font-size: 3rem;
+  flex: 1;
+}
+nav ul {
+  font-size: 2.5rem;
+  flex: 1;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+}
+#left{
+    position: relative;
+    top: 10vh;
+    left: 20vh;
+    width: 220px;
+    height: 500px;
+    background-color: seagreen;
+    border-radius: 20px;
+  box-shadow: -5px 0 15px -5px #333;
+  text-align: center;
+  
+}
+#left ul{
+  list-style: none;
+  cursor: pointer;
+  align-items: center;
+  display: inline-block;
+}
+#right{
+    position: absolute;
+    background-color: silver;
+    top: 10vh;
+    left: 52vh;
+    height: 600px ;
+    width: 700px ;
+    background-image: url(https://ws.nmmba.gov.tw/001/Upload/217/ckfile/b3f1548b-831c-4cf7-bfad-6235bc3049e2.jpg); 
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: white;
+	box-shadow: -5px 0 15px -5px #333;
+}
+#threef{
+  position: absolute;
+  width: 100px;
+  height: 30px;
+  top: 2vh;
+  left: 45vh;
+  font-size: 2rem;
+  cursor: pointer;
+  background-color: cornflowerblue;
+  border-radius: 10px;
+  text-align: center;
+  display: none;
+}
+#back{
+  position: absolute;
+  width: 100px;
+  height: 40px;
+  top: 3vh;
+  left: 90vh;
+  font-size: 2rem;
+  cursor: pointer;
+  border-radius: 10px;
+  text-align: center;
+  background-color: cornsilk;
+
+}
+.clear::after{
+  clear: both;
+}
+.card{
+  float: right;
+  z-index: 10;
+  visibility: hidden;
+  font-size: 1rem;
+
+}
+#show0{
+  top:10vh; 
+  position: absolute;
+  left: 75vh;
+}
+#show1{
+  top:20vh; 
+  position: absolute;
+  left: 70vh;
+}
+#show2{ 
+  bottom: 50px;
+  position: absolute;
+  left: 70vh;
+}
+
+#show3{
+  bottom: 50px; 
+  position: absolute;
+  
+  left: 68vh;
+}
+#show4{
+  bottom: 50px; 
+  position: absolute;
+  left: 100vh;
+
+}
+#show5{
+  position: absolute;
+  left: 100vh;
+}
+
+.card:hover{
+  animation: big 2s linear reverse;
+}
+@keyframes big{
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.2);
+  }
+}
+
+/*.Tosee{
+  position: absolute;
+  z-index: 999;
+  width: 200px;
+  height: 200px;
+  border: 3px solid #636363;
+  border-radius: 30%;
+  overflow: hidden;
+}*/
